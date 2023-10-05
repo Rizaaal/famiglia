@@ -1,0 +1,11 @@
+<ng-container *ngFor="let numero of romani">
+    <p *ngIf="(romani.indexOf(numero)+1) % 2 == 0">{{numero}}</p>
+</ng-container>
+
+<app-figlio (emitter)="onArray($event)"></app-figlio>
+
+<hr>
+
+<h1>app figlio (o padre)</h1>
+<p>{{x}}</p>
+
